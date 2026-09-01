@@ -22,5 +22,9 @@
 #include "code/eggs.dm"
 #include "code/tails.dm"
 #include "code/wallet.dm"
+#include "code/unary_devices.dm"
+#include "code/power.dm"
+#include "code/monitors.dm"
+#include "code/stationobjs.dm"
 
 #endif
