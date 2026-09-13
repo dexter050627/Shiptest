@@ -6,7 +6,10 @@
 	name = "C4L-Z1UM Agent"
 	description = "A peculiar substance capable of instantly regenerating live tissue."
 	taste_description = "milk"
-	metabolization_rate = 0
+//	[CELADON-ADD] - Добавление параметром, необходимых для метаболизации и вывода реагента
+	metabolizing = TRUE
+	metabolization_rate = 0.32
+//	[/CELADON-ADD]
 
 /datum/reagent/medicine/bonefixingjuice/on_mob_life(mob/living/M)
 	var/mob/living/carbon/C = M
@@ -23,5 +26,5 @@
 				broken_bone.remove_wound()
 			for(var/obj/item/organ/O in C.internal_organs)
 				O.damage = 0
-			holder.remove_reagent(/datum/reagent/medicine/bonefixingjuice, 10)
+			//holder.remove_reagent(/datum/reagent/medicine/bonefixingjuice, 10) [CELADON-DELETE] - Удаляет лишний кусок кода который вызывает рантайм
 	..()
