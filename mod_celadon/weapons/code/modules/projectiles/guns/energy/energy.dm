@@ -42,7 +42,7 @@
 	desc = "A lightweight, comfortable to carry around energy gun. The 'Patriot' serves as Nanotrasen-Sharplites's primary security grade carbine, while also being an extremely modular weapon platform."
 	icon_state = "patriot"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/nanotrasen, /obj/item/ammo_casing/energy/disabler/nanotrasen)
-	charge_sections = 3
+	charge_sections = 4
 	shaded_charge = TRUE
 
 	slot_offsets = list(
@@ -60,7 +60,7 @@
 	desc = "A basic energy-based laser carbine and somewhat of a predecessor to the X-10. Famed for its low price and reliability."
 	icon_state = "fuse"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/nanotrasen/less)
-	charge_sections = 3
+	charge_sections = 4
 	shaded_charge = TRUE
 
 /obj/item/gun/energy/e_gun/nanotrasen/ember
@@ -70,7 +70,7 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/nanotrasen/mini, /obj/item/ammo_casing/energy/disabler/nanotrasen/mini)
 	charge_sections = 3
 	shaded_charge = TRUE
-	w_class = WEIGHT_CLASS_NORMAL
+	w_class = WEIGHT_CLASS_SMALL
 	default_ammo_type = /obj/item/stock_parts/cell/gun/mini
 	allowed_ammo_types = list(
 		/obj/item/stock_parts/cell/gun/mini,
@@ -78,7 +78,6 @@
 	)
 	throwforce = 11 //This is funny, trust me.
 	ammo_x_offset = 2
-	charge_sections = 3
 	wield_delay = 0.2 SECONDS
 	wield_slowdown = LASER_PISTOL_SLOWDOWN
 
@@ -86,6 +85,12 @@
 
 	spread = 2
 	spread_unwielded = 5
+/*
+	unique_attachments = list(
+		/obj/item/attachment/rail_light/mini
+	)
+	default_attachments = list(/obj/item/attachment/rail_light/mini)
+*/
 
 /obj/item/gun/energy/e_gun/nanotrasen/ember/empty_cell
 	spawn_no_ammo = TRUE
@@ -102,7 +107,7 @@
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_SUITSTORE
-
+	charge_sections = 5
 	gun_firemodes = list(FIREMODE_SEMIAUTO, FIREMODE_FULLAUTO)
 	default_firemode = FIREMODE_SEMIAUTO
 
