@@ -1030,6 +1030,13 @@
 	if(!ishuman(user))
 		return
 	var/mob/living/carbon/human/H = user
+	for(var/f in user.faction)
+		switch (f)
+			if("playerSolFed")
+				return 'mod_celadon/_storage_sounds/sound/emotes/faction/glory_solfed.ogg'
+			if("playerSyndicate")
+				return 'mod_celadon/_storage_sounds/sound/emotes/faction/freedom_syndi.ogg'
+
 	if(!H.mind || !H.mind.miming)
 		if(user.gender == FEMALE)
 			return pick(
