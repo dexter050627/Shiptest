@@ -1,0 +1,8 @@
+#ifndef MODPACK_CELADON_LOCALIZATION
+#define MODPACK_CELADON_LOCALIZATION
+
+#include "_localization.dm"
+
+#include "code/localization_ru.dm"
+
+#endif

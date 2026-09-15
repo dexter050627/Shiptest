@@ -143,7 +143,6 @@
 	его выше.*/
 
 // --- EVENTS --- //
-
+#include "localization/_localization.dme"
 #include "event_td/_event_td.dme" // Ивент на атаку и защита
-
 //#include "event_cly/_event_cly.dme"
